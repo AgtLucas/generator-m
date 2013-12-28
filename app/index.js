@@ -24,7 +24,7 @@ MilagroGenerator.prototype.askFor = function askFor() {
 
   var prompts = [{
     name: 'projectName',
-    message: 'Qual o nome do projeto?'
+    message: 'E aí, qual será o nome do projeto?'
   }];
 
   this.prompt(prompts, function (props) {
