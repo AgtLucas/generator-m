@@ -35,8 +35,8 @@ MilagroGenerator.prototype.askFor = function askFor() {
 };
 
 MilagroGenerator.prototype.app = function app() {
-  this.mkdir('app');
-  this.mkdir('app/templates');
+  this.mkdir('site');
+  this.mkdir('site/templates');
 
   this.copy('_package.json', 'package.json');
   this.copy('_bower.json', 'bower.json');
