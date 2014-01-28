@@ -1,4 +1,4 @@
-# Milagro Generator [![Build Status](https://secure.travis-ci.org/AgtLucas/generator-milagro.png?branch=master)](https://travis-ci.org/AgtLucas/generator-milagro)
+# generator-milagro [![Build Status](https://secure.travis-ci.org/AgtLucas/generator-milagro.png?branch=master)](https://travis-ci.org/AgtLucas/generator-milagro)
 
 A generator for [Yeoman](http://yeoman.io).
 

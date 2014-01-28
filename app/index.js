@@ -23,12 +23,14 @@ MilagroGenerator.prototype.askFor = function askFor() {
   console.log(this.yeoman);
 
   var prompts = [{
-    name: 'projectName',
-    message: 'E aí, qual será o nome do projeto?'
+    type: 'confirm',
+    name: 'someOption',
+    message: 'Would you like to enable this option?',
+    default: true
   }];
 
   this.prompt(prompts, function (props) {
-    this.projectName = props.projectName;
+    this.someOption = props.someOption;
 
     cb();
   }.bind(this));
@@ -36,8 +38,7 @@ MilagroGenerator.prototype.askFor = function askFor() {
 
 MilagroGenerator.prototype.app = function app() {
   this.mkdir('app');
-  this.mkdir('app/mockup');
-  this.mkdir('app/site');
+  this.mkdir('app/templates');
 
   this.copy('_package.json', 'package.json');
   this.copy('_bower.json', 'bower.json');
